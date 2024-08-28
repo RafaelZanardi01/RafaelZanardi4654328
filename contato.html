@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Portfólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Mim</a></li>                
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato (Fale comigo!)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contato</h1>
+        <p>Deixe sua mensagem que em breve entrarei em contato, Obrigado!</p>
+        <!-- Formulário de contato -->
+        <form action="mailto:zanardi_rafael@hotmail.com" method="post" enctype="text/plain">
+            <div class="form-container">
+                <div class="form-left">
+                    <!-- Campo para o nome -->
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required autocomplete="off">
+                    </div>
+                    
+                    <!-- Campo para o email -->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu Email" required autocomplete="off">
+                    </div>
+                </div>
+                
+                <!-- Campo para a mensagem -->
+                <div class="form-group mensagem">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+            </div>
+            <br>
+            <!-- Botão de envio -->
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
